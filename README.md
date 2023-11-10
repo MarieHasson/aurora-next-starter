@@ -40,7 +40,7 @@ All tests are collocated with the source code inside the same directory. So, it 
 To use this template you can simply click in **[Use this template](https://github.com/MarieHasson/aurora-next-starter/generate)** or create your Next.js app based on this template by running:
 
 ```bash
-yarn create next-app -e https://github.com/MarieHasson/aurora-next-starter
+pnpm create next-app -e https://github.com/MarieHasson/aurora-next-starter
 ```
 
 ## 🚀 Deploy to production
