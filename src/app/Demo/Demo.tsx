@@ -66,16 +66,15 @@ const Demo = () => (
             Production-Ready Starter
           </p>
           <h1 className="text-4xl font-extrabold leading-[1.1] tracking-tight text-foreground md:text-5xl lg:text-6xl">
-            Next.js Enterprise
+            Aurora Next
             <br />
             <span className="bg-gradient-to-r from-primary/90 to-primary/50 bg-clip-text text-transparent">
-              Boilerplate
+              Starter
             </span>
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-muted-foreground lg:text-lg">
-            Boilerplate and Starter for Next.js, Tailwind CSS and TypeScript. Made with developer
-            experience first: Next.js, TypeScript, Biome, Husky, Lint-Staged, Vitest, React Testing
-            Library, PostCSS, Tailwind CSS, Storybook, GH actions.
+            A production-ready foundation for Next.js, Tailwind CSS, and TypeScript, with quality
+            checks, testing, component development, and deployment-ready defaults included.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
@@ -125,14 +124,7 @@ const Demo = () => (
     {/* ── Footer ──────────────────────────────────────────────── */}
     <footer className="border-t border-border/60 bg-background px-6 py-5">
       <p className="text-center text-sm text-muted-foreground">
-        &copy;{' '}
-        <Link
-          href="https://github.com/MarieHasson/aurora-next-starter"
-          className="font-medium text-foreground/70 underline underline-offset-4 transition-colors hover:text-primary"
-        >
-          Marie Hasson
-        </Link>{' '}
-        Copyright {new Date().getFullYear()}
+        &copy; {new Date().getFullYear()} Aurora Next Starter
       </p>
     </footer>
   </div>

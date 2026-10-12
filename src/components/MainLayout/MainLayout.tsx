@@ -35,11 +35,7 @@ export const MainLayout = ({ children, className }: MainLayoutProps) => {
       </header>
       <main className="flex-1">{children}</main>
       <footer className="flex items-center justify-center border-t border-border p-4 text-muted-foreground">
-        ©
-        <Link href="https://github.com/MarieHasson/aurora-next-starter" className="pr-2">
-          Marie Hasson
-        </Link>
-        Copyright {new Date().getFullYear()}
+        © {new Date().getFullYear()} Aurora Next Starter
       </footer>
     </div>
   );

@@ -1,7 +1,7 @@
 {
   "name": "aurora-next-starter",
   "version": "0.1.0",
-  "description": "Next.js boilerplate with husky, lint-staged, biome, vitest, react-testing-library, storybook and ghaction.",
+  "description": "A production-ready Next.js starter with TypeScript, Tailwind CSS, Biome, Vitest, and Storybook.",
   "private": true,
   "scripts": {
     "dev": "next dev --turbo",

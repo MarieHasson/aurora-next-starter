@@ -1,79 +1,75 @@
-# Boilerplate and Starter for Next.js 16, Tailwind CSS 4 and TypeScript
+# Aurora Next Starter
 
-🚀 Boilerplate and Starter for Next.js, Tailwind CSS and TypeScript ⚡️ Made with developer experience first: Next.js (app routing), TypeScript, Biome, Husky, Lint-Staged, Vitest, React Testing Library, PostCSS, Tailwind CSS, Storybook, GH actions.
+A production-ready Next.js starter with a modern TypeScript toolchain, accessible UI foundations, automated quality checks, and a practical testing setup.
 
-![Cover](https://svgshare.com/i/idk.svg)
+## Features
 
-## :rocket: Features
+- Next.js 16 with the App Router and React 19
+- TypeScript with strict mode and absolute imports
+- Tailwind CSS 4 and dark-mode support
+- Base UI components with class-variance-authority
+- Biome linting and formatting
+- Vitest and React Testing Library
+- Storybook component development
+- T3 Env validation
+- Husky and lint-staged Git hooks
+- GitHub Actions checks for formatting, tests, builds, and Storybook
 
-Developer experience first:
+## Requirements
 
-- [Next.js](https://nextjs.org) for Static Site Generator
-- Type checking [TypeScript](https://www.typescriptlang.org)
-- Integrate with [Tailwind CSS 4](https://tailwindcss.com) (CSS-first configuration)
-- [Storybook](https://storybook.js.org) for components documentation
-- Strict Mode for TypeScript and React 19
-- Linter and Code Formatter with [Biome](https://biomejs.dev)
-- [Husky](https://typicode.github.io/husky/#/) for Git Hooks
-- [Lint-staged](https://github.com/okonet/lint-staged) for running linters on Git staged files
-- Testing with [Vitest](https://vitest.dev/) and [React Testing Library](https://testing-library.com/)
-- Dark mode with [next-themes](https://github.com/pacocoursey/next-themes)
-- Component variants with [CVA](https://cva.style/) and [Base UI](https://base-ui.com/) headless components
-- Absolute Imports using `@` prefix
-- Nextjs custom layouts
-- [T3 env](https://env.t3.gg/) Manage your environment variables with ease
-- Message convention for git
-- Maximize lighthouse score
-- GH actions
+- Node.js 24.13 or newer
+- pnpm 10.30.3
 
-## 📅 Plans
-
-- [Bundler Analyzer](https://www.npmjs.com/package/@next/bundle-analyzer)
-- [next-pwa](https://github.com/shadowwalker/next-pwa)
-
-## 🧪 Testing
-
-Tests live in the `__tests__/` directory with a mirrored structure matching `src/`. Shared test utilities are in `__tests__/test-utils.tsx`. Run tests with `pnpm test` (Vitest).
-
-## :information_source: How To Use
-
-To use this template you can simply click in **[Use this template](https://github.com/MarieHasson/aurora-next-starter/generate)** or create your Next.js app based on this template by running:
+## Getting started
 
 ```bash
-pnpm create next-app -e https://github.com/MarieHasson/aurora-next-starter
+git clone https://github.com/MarieHasson/aurora-next-starter.git
+cd aurora-next-starter
+corepack enable
+pnpm install
+cp .env.example .env.local
+pnpm dev
 ```
 
-## 🚀 Deploy to production
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-Install command on Vercel:
+## Available commands
 
+| Command | Purpose |
+| --- | --- |
+| `pnpm dev` | Start the development server |
+| `pnpm build` | Create a production build |
+| `pnpm start` | Run the production server |
+| `pnpm check` | Run Biome checks |
+| `pnpm fix` | Apply safe Biome fixes |
+| `pnpm test` | Run the test suite |
+| `pnpm test:watch` | Run tests in watch mode |
+| `pnpm storybook` | Start Storybook |
+| `pnpm storybook:build` | Build the static Storybook site |
+
+## Project structure
+
+```text
+src/
+├── app/          # App Router pages and layouts
+├── components/   # Reusable components and providers
+├── hooks/        # Shared React hooks
+├── lib/          # Utilities, environment validation, and declarations
+└── styles/       # Global styles and design tokens
+__tests__/       # Tests mirroring the source structure
 ```
-corepack use pnpm@`pnpm -v` && pnpm i
-```
 
-You can see the results locally in production mode with:
+## Environment variables
 
-```shell
-pnpm build
-```
+Copy `.env.example` to `.env.local` and add values as the application grows. Environment validation lives in `src/lib/env/env.mjs`.
 
-```shell
-pnpm start
-```
+## Contributing
 
-## 🤝 Contributing
-
-1. Fork this repository;
-2. Create your branch: `git checkout -b my-awesome-contribution`;
-3. Commit your changes: `git commit -m 'feat: Add some awesome contribution'`;
-4. Push to the branch: `git push origin my-awesome-contribution`.
+1. Create a branch from `main`.
+2. Make the change and add or update tests.
+3. Run `pnpm check`, `pnpm test`, and `pnpm build`.
+4. Open a pull request with a concise summary of the change.
 
 ## License
 
-Licensed under the MIT License, Copyright © 2024-2026
-
-See [LICENSE](LICENSE) for more information.
-
----
-
-Made with much :heart: and :muscle: by Marie Hasson :blush: <a href="https://github.com/MarieHasson/aurora-next-starter">My Contact</a>
+Licensed under the [MIT License](LICENSE).

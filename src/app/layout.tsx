@@ -10,9 +10,9 @@ import { cn } from '@/lib/utils';
 const inter = Inter({ subsets: ['latin'], variable: '--font-primary' });
 
 export const metadata: Metadata = {
-  title: 'Home page | Nextjs boilerplate',
+  title: 'Aurora Next Starter',
   description:
-    '🚀 Boilerplate and Starter for Next.js, Tailwind CSS and TypeScript ⚡️ Made with developer experience first: Next.js, TypeScript, Biome, Husky, Lint-Staged, Vitest, React Testing Library, PostCSS, Tailwind CSS, Storybook, GH actions.'
+    'A production-ready Next.js starter with TypeScript, Tailwind CSS, Biome, Vitest, and Storybook.'
 };
 
 interface RootLayoutProps {
